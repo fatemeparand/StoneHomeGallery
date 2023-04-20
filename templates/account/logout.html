@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    login
+{% endblock %}
+
+{% block content %}
+    <h4>Are you sure to leave the site?</h4>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Yes">
+        <a href="{% url 'pages:home_page' %}" type="btn">No</a>
+    </form>
+
+{% endblock %}
+
+

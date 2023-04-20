@@ -39,10 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third_party_apps
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
     # my_apps
     'accounts',
     'pages',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,3 +139,22 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# authentication config
+LOGIN_REDIRECT_URL = 'pages:home_page'
+LOGOUT_REDIRECT_URL = 'pages:home_page'
+
+# allauth config
+AUTHENTICATION_BACKENDS = [
+    # authentication with django auth
+    'django.contrib.auth.backends.ModelBackend',
+    
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True

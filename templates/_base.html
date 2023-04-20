@@ -5,7 +5,21 @@
     <title>{% block page_title %}{% endblock %}</title>
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+
+    {% if user.is_authenticated %}
+
+            hello {{ user.username }}
+            <a href="{% url 'account_logout' %}">logout</a>
+
+    {% else %}
+
+           <a href="{% url  'account_login' %}">login</a>
+           <a href="{% url  'account_signup' %}">signup</a>
+
+    {% endif %}
+
+
+{% block content %}
+{% endblock %}
 </body>
 </html>
