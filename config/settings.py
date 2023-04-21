@@ -145,9 +145,11 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+
 # authentication config
 LOGIN_REDIRECT_URL = 'pages:home_page'
 LOGOUT_REDIRECT_URL = 'pages:home_page'
+
 
 # allauth config
 AUTHENTICATION_BACKENDS = [

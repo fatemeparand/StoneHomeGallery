@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 11:03+0330\n"
-"PO-Revision-Date: 2023-04-21 11:05+0330\n"
+"POT-Creation-Date: 2023-04-21 11:41+0330\n"
+"PO-Revision-Date: 2023-04-21 11:45+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,6 +28,7 @@ msgstr "خروج"
 
 #: .\templates\_base.html:18 .\templates\account\login.html:5
 #: .\templates\account\login.html:12
+#: .\templates\account\password_reset_from_key_done.html:10
 msgid "login"
 msgstr "ورود"
 
@@ -35,6 +36,11 @@ msgstr "ورود"
 #: .\templates\account\signup.html:12
 msgid "signup"
 msgstr "ثبت نام"
+
+#: .\templates\account\login.html:14
+#| msgid "change password"
+msgid "forgot password"
+msgstr "فراموشی رمز"
 
 #: .\templates\account\logout.html:9
 msgid "Are you sure to leave the site?"
@@ -47,6 +53,44 @@ msgstr "بله"
 #: .\templates\account\logout.html:13
 msgid "No"
 msgstr "خیر"
+
+#: .\templates\account\password_reset.html:5
+#: .\templates\account\password_reset_done.html:5
+#: .\templates\account\password_reset_from_key.html:5
+#: .\templates\account\password_reset_from_key_done.html:5
+#| msgid "password changed"
+msgid "password reset"
+msgstr "تنظیم مجدد گذرواژه"
+
+#: .\templates\account\password_reset.html:9
+msgid "Please enter your Email:"
+msgstr "لطفا آدرس اییمیل خود را وارد نمایید:"
+
+#: .\templates\account\password_reset.html:13
+msgid "Send Email"
+msgstr "ارسال ایمیل"
+
+#: .\templates\account\password_reset_done.html:9
+msgid "Please Check Your Email. We have sent you instructions."
+msgstr ""
+"لطفا ایمیل خود را چک کنید. ما دستورالعمل ها را برای شما ارسال کرده ایم."
+
+#: .\templates\account\password_reset_from_key.html:9
+msgid "Please enter your new password:"
+msgstr "لطفا گذرواژه جدید خود را وارد کنید:"
+
+#: .\templates\account\password_reset_from_key.html:13
+msgid "send"
+msgstr "ارسال"
+
+#: .\templates\account\password_reset_from_key_done.html:9
+#| msgid "Your password has been successfully changed."
+msgid "Your new password has been applied successfully."
+msgstr "گذرواژه جدید شما با موفقیت اعمال شد."
+
+#: .\templates\account\password_reset_from_key_done.html:10
+msgid "Now you can log in with the new password"
+msgstr "اکنون می توانید با رمز عبور جدید وارد شوید"
 
 #: .\templates\home_page.html:5
 msgid "Home"
@@ -69,7 +113,6 @@ msgid "change password"
 msgstr "تغییر گذرواژه"
 
 #: .\templates\registration\password_change_form.html:12
-#| msgid "change password"
 msgid "change Password"
 msgstr "تغییر گذرواژه "
 
