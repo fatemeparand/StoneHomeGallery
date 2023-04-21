@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 11:41+0330\n"
+"POT-Creation-Date: 2023-04-22 00:38+0330\n"
 "PO-Revision-Date: 2023-04-21 11:45+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,142 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\products\models.py:13
+msgid "farvardin"
+msgstr ""
+
+#: .\products\models.py:14
+msgid "ordibehesht"
+msgstr ""
+
+#: .\products\models.py:15
+msgid "khordad"
+msgstr ""
+
+#: .\products\models.py:16
+msgid "tir"
+msgstr ""
+
+#: .\products\models.py:17
+msgid "mordad"
+msgstr ""
+
+#: .\products\models.py:18
+msgid "shahrivar"
+msgstr ""
+
+#: .\products\models.py:19
+msgid "mehr"
+msgstr ""
+
+#: .\products\models.py:20
+msgid "aban"
+msgstr ""
+
+#: .\products\models.py:21
+msgid "azar"
+msgstr ""
+
+#: .\products\models.py:22
+msgid "dey"
+msgstr ""
+
+#: .\products\models.py:23
+msgid "bahman"
+msgstr ""
+
+#: .\products\models.py:24
+#, fuzzy
+#| msgid "send"
+msgid "esfand"
+msgstr "ارسال"
+
+#: .\products\models.py:27
+msgid "stone name"
+msgstr ""
+
+#: .\products\models.py:28
+msgid "stone description"
+msgstr ""
+
+#: .\products\models.py:29
+msgid "stone properties"
+msgstr ""
+
+#: .\products\models.py:30
+msgid "stone_quality"
+msgstr ""
+
+#: .\products\models.py:32
+#, fuzzy
+#| msgid "Home Page"
+msgid "stone image"
+msgstr "صفحه خانه"
+
+#: .\products\models.py:38
+msgid "Stones"
+msgstr ""
+
+#: .\products\models.py:42 .\products\models.py:64
+msgid "product type"
+msgstr ""
+
+#: .\products\models.py:48
+msgid "Product types"
+msgstr ""
+
+#: .\products\models.py:63
+msgid "product name"
+msgstr ""
+
+#: .\products\models.py:65
+msgid "stone"
+msgstr ""
+
+#: .\products\models.py:66
+msgid "product material"
+msgstr ""
+
+#: .\products\models.py:67
+msgid "suitable for"
+msgstr ""
+
+#: .\products\models.py:68
+msgid "stone color"
+msgstr ""
+
+#: .\products\models.py:69
+msgid "product image"
+msgstr ""
+
+#: .\products\models.py:71
+msgid "price"
+msgstr ""
+
+#: .\products\models.py:72
+msgid "Product_inventory"
+msgstr ""
+
+#: .\products\models.py:73
+msgid "product owner"
+msgstr ""
+
+#: .\products\models.py:74
+msgid "active status"
+msgstr ""
+
+#: .\products\models.py:76
+msgid "creation date"
+msgstr ""
+
+#: .\products\models.py:77
+msgid "Modification date"
+msgstr ""
+
+#: .\products\models.py:83
+msgid "Products"
+msgstr ""
 
 #: .\templates\_base.html:13
 msgid "welcome"
@@ -38,7 +174,6 @@ msgid "signup"
 msgstr "ثبت نام"
 
 #: .\templates\account\login.html:14
-#| msgid "change password"
 msgid "forgot password"
 msgstr "فراموشی رمز"
 
@@ -58,7 +193,6 @@ msgstr "خیر"
 #: .\templates\account\password_reset_done.html:5
 #: .\templates\account\password_reset_from_key.html:5
 #: .\templates\account\password_reset_from_key_done.html:5
-#| msgid "password changed"
 msgid "password reset"
 msgstr "تنظیم مجدد گذرواژه"
 
@@ -84,17 +218,12 @@ msgid "send"
 msgstr "ارسال"
 
 #: .\templates\account\password_reset_from_key_done.html:9
-#| msgid "Your password has been successfully changed."
 msgid "Your new password has been applied successfully."
 msgstr "گذرواژه جدید شما با موفقیت اعمال شد."
 
 #: .\templates\account\password_reset_from_key_done.html:10
 msgid "Now you can log in with the new password"
 msgstr "اکنون می توانید با رمز عبور جدید وارد شوید"
-
-#: .\templates\home_page.html:5
-msgid "Home"
-msgstr "خانه"
 
 #: .\templates\home_page.html:9
 msgid "Home Page"
@@ -115,6 +244,9 @@ msgstr "تغییر گذرواژه"
 #: .\templates\registration\password_change_form.html:12
 msgid "change Password"
 msgstr "تغییر گذرواژه "
+
+#~ msgid "Home"
+#~ msgstr "خانه"
 
 #~ msgid "change"
 #~ msgstr "تغییر"
