@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-20 23:42+0330\n"
-"PO-Revision-Date: 2023-04-20 23:44+0330\n"
+"POT-Creation-Date: 2023-04-21 11:03+0330\n"
+"PO-Revision-Date: 2023-04-21 11:05+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,3 +55,23 @@ msgstr "خانه"
 #: .\templates\home_page.html:9
 msgid "Home Page"
 msgstr "صفحه خانه"
+
+#: .\templates\registration\password_change_done.html:5
+msgid "password changed"
+msgstr "گذرواژه تغییر کرد"
+
+#: .\templates\registration\password_change_done.html:9
+msgid "Your password has been successfully changed."
+msgstr "رمز شما با موفقیت تغییر کرد."
+
+#: .\templates\registration\password_change_form.html:5
+msgid "change password"
+msgstr "تغییر گذرواژه"
+
+#: .\templates\registration\password_change_form.html:12
+#| msgid "change password"
+msgid "change Password"
+msgstr "تغییر گذرواژه "
+
+#~ msgid "change"
+#~ msgstr "تغییر"
