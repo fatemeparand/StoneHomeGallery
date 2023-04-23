@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 01:17+0330\n"
-"PO-Revision-Date: 2023-04-22 01:18+0330\n"
+"POT-Creation-Date: 2023-04-23 15:30+0330\n"
+"PO-Revision-Date: 2023-04-23 15:32+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,6 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: .\products\models.py:9
-#| msgid "stone"
 msgid "Gemstone"
 msgstr "سنگ قیمتی"
 
@@ -120,7 +119,11 @@ msgid "Men"
 msgstr "آقایان"
 
 #: .\products\models.py:64
-#| msgid "Home"
+#| msgid "Women"
+msgid "women"
+msgstr "بانوان"
+
+#: .\products\models.py:64
 msgid "Women"
 msgstr "بانوان"
 
@@ -140,7 +143,7 @@ msgstr "سنگ"
 msgid "product material"
 msgstr "جنس سنگ"
 
-#: .\products\models.py:72
+#: .\products\models.py:72 .\templates\product\product_list.html:12
 msgid "suitable for"
 msgstr "مناسب برای"
 
@@ -157,7 +160,7 @@ msgid "price"
 msgstr "قیمت"
 
 #: .\products\models.py:77
-msgid "Product_inventory"
+msgid "Product inventory"
 msgstr "موجودی محصول"
 
 #: .\products\models.py:78
@@ -254,6 +257,10 @@ msgstr "اکنون می توانید با رمز عبور جدید وارد شو
 #: .\templates\home_page.html:9
 msgid "Home Page"
 msgstr "صفحه خانه"
+
+#: .\templates\product\product_list.html:6
+msgid "product lists"
+msgstr "لیست محصولات"
 
 #: .\templates\registration\password_change_done.html:5
 msgid "password changed"

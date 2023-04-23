@@ -60,21 +60,21 @@ class Product(models.Model):
     )
 
     SUITABLE_CHOICES = (
-        ('M', _('Men')),
-        ('F', _('Women')),
-        ('B', _('Men and Women')),
+        (_('Men'), _('Men')),
+        (_('women'), _('Women')),
+        (_('Men and Women'), _('Men and Women')),
     )
 
     product_name = models.CharField(max_length=200, verbose_name=_('product name'))
     product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE, verbose_name=_('product type'))
     stone = models.ForeignKey(Stone, on_delete=models.CASCADE, related_name='stones', verbose_name=_('stone'))
     product_material = models.CharField(choices=MATERIAL_CHOICES, max_length=10, verbose_name=_('product material'))
-    suitable_for = models.CharField(choices=SUITABLE_CHOICES, max_length=1, verbose_name=_('suitable for'))
+    suitable_for = models.CharField(choices=SUITABLE_CHOICES, max_length=15, verbose_name=_('suitable for'))
     product_color = models.CharField(max_length=20, verbose_name=_('stone color'))
     product_image = models.ImageField(verbose_name=_('product image'), upload_to='product_cover/')
 
     price = models.PositiveIntegerField(verbose_name=_('price'))
-    Product_inventory = models.PositiveIntegerField(verbose_name=_('Product_inventory'))
+    Product_inventory = models.PositiveIntegerField(verbose_name=_('Product inventory'))
     product_owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, verbose_name=_('product owner'))
     active = models.BooleanField(default=True, verbose_name=_('active status'))
 
