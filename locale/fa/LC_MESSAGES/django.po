@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 00:38+0330\n"
-"PO-Revision-Date: 2023-04-21 11:45+0330\n"
+"POT-Creation-Date: 2023-04-22 01:17+0330\n"
+"PO-Revision-Date: 2023-04-22 01:18+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,141 +18,167 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\products\models.py:13
-msgid "farvardin"
-msgstr ""
+#: .\products\models.py:9
+#| msgid "stone"
+msgid "Gemstone"
+msgstr "سنگ قیمتی"
+
+#: .\products\models.py:10
+msgid "Semiprecious stone"
+msgstr "سنگ نیمه قیمتی"
 
 #: .\products\models.py:14
-msgid "ordibehesht"
-msgstr ""
+msgid "farvardin"
+msgstr "فروردین"
 
 #: .\products\models.py:15
-msgid "khordad"
-msgstr ""
+msgid "ordibehesht"
+msgstr "اردیبهشت"
 
 #: .\products\models.py:16
-msgid "tir"
-msgstr ""
+msgid "khordad"
+msgstr "خرداد"
 
 #: .\products\models.py:17
-msgid "mordad"
-msgstr ""
+msgid "tir"
+msgstr "تیر"
 
 #: .\products\models.py:18
-msgid "shahrivar"
-msgstr ""
+msgid "mordad"
+msgstr "مرداد"
 
 #: .\products\models.py:19
-msgid "mehr"
-msgstr ""
+msgid "shahrivar"
+msgstr "شهریور"
 
 #: .\products\models.py:20
-msgid "aban"
-msgstr ""
+msgid "mehr"
+msgstr "مهر"
 
 #: .\products\models.py:21
-msgid "azar"
-msgstr ""
+msgid "aban"
+msgstr "آبان"
 
 #: .\products\models.py:22
-msgid "dey"
-msgstr ""
+msgid "azar"
+msgstr "آذر"
 
 #: .\products\models.py:23
-msgid "bahman"
-msgstr ""
+msgid "dey"
+msgstr "دی"
 
 #: .\products\models.py:24
-#, fuzzy
-#| msgid "send"
-msgid "esfand"
-msgstr "ارسال"
+msgid "bahman"
+msgstr "بهمن"
 
-#: .\products\models.py:27
-msgid "stone name"
-msgstr ""
+#: .\products\models.py:25
+msgid "esfand"
+msgstr "اسفند"
 
 #: .\products\models.py:28
-msgid "stone description"
-msgstr ""
+msgid "stone name"
+msgstr "اسم سنگ"
 
 #: .\products\models.py:29
-msgid "stone properties"
-msgstr ""
+msgid "stone description"
+msgstr "توصیف سنگ"
 
 #: .\products\models.py:30
+msgid "stone properties"
+msgstr "ویژگی سنگ"
+
+#: .\products\models.py:31
 msgid "stone_quality"
-msgstr ""
+msgstr "کیفیت سنگ"
 
-#: .\products\models.py:32
-#, fuzzy
-#| msgid "Home Page"
+#: .\products\models.py:36
 msgid "stone image"
-msgstr "صفحه خانه"
+msgstr "عکس سنگ"
 
-#: .\products\models.py:38
+#: .\products\models.py:42
 msgid "Stones"
-msgstr ""
+msgstr "سنگ ها"
 
-#: .\products\models.py:42 .\products\models.py:64
+#: .\products\models.py:46 .\products\models.py:69
 msgid "product type"
-msgstr ""
+msgstr "نوع محصول"
 
-#: .\products\models.py:48
+#: .\products\models.py:52
 msgid "Product types"
-msgstr ""
+msgstr "نوع محصول"
+
+#: .\products\models.py:58
+msgid "Natural Stone"
+msgstr "سنگ طبیعی"
+
+#: .\products\models.py:59
+msgid "Artificial Stone"
+msgstr "سنگ مصنوعی"
 
 #: .\products\models.py:63
-msgid "product name"
-msgstr ""
+msgid "Men"
+msgstr "آقایان"
+
+#: .\products\models.py:64
+#| msgid "Home"
+msgid "Women"
+msgstr "بانوان"
 
 #: .\products\models.py:65
-msgid "stone"
-msgstr ""
-
-#: .\products\models.py:66
-msgid "product material"
-msgstr ""
-
-#: .\products\models.py:67
-msgid "suitable for"
-msgstr ""
+msgid "Men and Women"
+msgstr "اقایان و بانوان"
 
 #: .\products\models.py:68
-msgid "stone color"
-msgstr ""
+msgid "product name"
+msgstr "اسم محصول"
 
-#: .\products\models.py:69
-msgid "product image"
-msgstr ""
+#: .\products\models.py:70
+msgid "stone"
+msgstr "سنگ"
 
 #: .\products\models.py:71
-msgid "price"
-msgstr ""
+msgid "product material"
+msgstr "جنس سنگ"
 
 #: .\products\models.py:72
-msgid "Product_inventory"
-msgstr ""
+msgid "suitable for"
+msgstr "مناسب برای"
 
 #: .\products\models.py:73
-msgid "product owner"
-msgstr ""
+msgid "stone color"
+msgstr "رنگ سنگ"
 
 #: .\products\models.py:74
-msgid "active status"
-msgstr ""
+msgid "product image"
+msgstr "عکس محصول"
 
 #: .\products\models.py:76
-msgid "creation date"
-msgstr ""
+msgid "price"
+msgstr "قیمت"
 
 #: .\products\models.py:77
-msgid "Modification date"
-msgstr ""
+msgid "Product_inventory"
+msgstr "موجودی محصول"
 
-#: .\products\models.py:83
+#: .\products\models.py:78
+msgid "product owner"
+msgstr "مالک محصول"
+
+#: .\products\models.py:79
+msgid "active status"
+msgstr "وضعیت فعال"
+
+#: .\products\models.py:81
+msgid "creation date"
+msgstr "تاریخ ایجاد"
+
+#: .\products\models.py:82
+msgid "Modification date"
+msgstr "تاریخ اصلاح"
+
+#: .\products\models.py:88
 msgid "Products"
-msgstr ""
+msgstr "محصولات"
 
 #: .\templates\_base.html:13
 msgid "welcome"
@@ -244,9 +270,6 @@ msgstr "تغییر گذرواژه"
 #: .\templates\registration\password_change_form.html:12
 msgid "change Password"
 msgstr "تغییر گذرواژه "
-
-#~ msgid "Home"
-#~ msgstr "خانه"
 
 #~ msgid "change"
 #~ msgstr "تغییر"

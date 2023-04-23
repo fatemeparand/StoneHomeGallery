@@ -1,12 +1,13 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
+from multiselectfield import MultiSelectField
 
 
 class Stone(models.Model):
     QUALITY_CHOICES = (
-        ('gen', 'Gemstone'),
-        ('semi', 'Semiprecious stone')
+        ('gen', _('Gemstone')),
+        ('semi', _('Semiprecious stone'))
     )
 
     BIRTH_MONTH_STONE_CHOICES = (
@@ -28,7 +29,10 @@ class Stone(models.Model):
     stone_description = models.TextField(verbose_name=_('stone description'))
     stone_properties = models.TextField(verbose_name=_('stone properties'))
     stone_quality = models.CharField(choices=QUALITY_CHOICES, verbose_name=_('stone_quality'))
-    birth_month_stone = models.CharField(choices=BIRTH_MONTH_STONE_CHOICES, verbose_name='birth month stone')
+    birth_month_stone = MultiSelectField(choices=BIRTH_MONTH_STONE_CHOICES, max_choices=5, max_length=12,
+                                         verbose_name='birth month stone')
+
+    # birth_month_stone = models.CharField(choices=BIRTH_MONTH_STONE_CHOICES, verbose_name='birth month stone')
     stone_image = models.ImageField(verbose_name=_('stone image'), upload_to='stone_cover/')
 
     def __str__(self):
@@ -51,13 +55,14 @@ class ProductType(models.Model):
 class Product(models.Model):
 
     MATERIAL_CHOICES = (
-        ('natural', 'Natural Stone'),
-        ('artificial', 'Artificial Stone'),
+        ('natural', _('Natural Stone')),
+        ('artificial', _('Artificial Stone')),
     )
 
     SUITABLE_CHOICES = (
-        ('M', 'Man'),
-        ('F', 'Woman')
+        ('M', _('Men')),
+        ('F', _('Women')),
+        ('B', _('Men and Women')),
     )
 
     product_name = models.CharField(max_length=200, verbose_name=_('product name'))

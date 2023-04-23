@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'rosetta',
+    'multiselectfield',
+
 
     # my_apps
     'accounts',
