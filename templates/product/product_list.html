@@ -1,5 +1,4 @@
 {% extends '_base.html' %}
-
 {% load i18n %}
 
 {% block page_title %}
@@ -10,6 +9,7 @@
     {% for product in products %}
         <h4>{{ product.product_name }}</h4>
         <p>{% trans 'suitable for' %}: {{ product.suitable_for }}</p>
+        <a href="{{ product.get_absolute_url }}">{% trans 'More' %}</a>
         <hr>
     {% endfor %}
 

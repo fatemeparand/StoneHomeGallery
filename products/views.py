@@ -9,5 +9,10 @@ def product_list(request):
     return render(request, 'product/product_list.html', context)
 
 
+def product_detail(request, pk):
+    product = Product.objects.get(pk=pk)
+
+    context = {'product': product}
+    return render(request, 'product/product_detail.html', context)
 
 

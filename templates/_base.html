@@ -8,17 +8,22 @@
 </head>
 <body dir="rtl">
 
-    {% if user.is_authenticated %}
+{% if user.is_authenticated %}
 
-        {% trans 'welcome' %} {{ user.username }}
-        <a href="{% url 'account_logout' %}">{% trans 'logout' %}</a>
+    {% trans 'welcome' %} {{ user.username }}
+    <a href="{% url 'account_logout' %}">{% trans 'logout' %}</a>
 
-    {% else %}
+{% else %}
 
-        <a href="{% url  'account_login' %}">{% trans 'login' %}</a>
-        <a href="{% url  'account_signup' %}">{% trans 'signup' %}</a>
+    <a href="{% url  'account_login' %}">{% trans 'login' %}</a>
+    <a href="{% url  'account_signup' %}">{% trans 'signup' %}</a>
 
-    {% endif %}
+{% endif %}
+
+<p>
+    <a href="{% url 'pages:home_page' %}">{% trans 'Home' %}</a>
+    <a href="{% url 'products:product_list' %}">{% trans 'prodrct lists' %}</a>
+</p>
 
 
 {% block content %}

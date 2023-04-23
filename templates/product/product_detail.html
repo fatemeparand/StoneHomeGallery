@@ -1,0 +1,27 @@
+{% extends '_base.html' %}
+{% load i18n %}
+
+{% block page_title %}
+    StoneHomeGallery/{{ product.product_name }}
+{% endblock %}
+
+{% block content %}
+    <h4>{{ product.product_name }}</h4>
+    <p>{% trans 'product type' %}: {{ product.product_type.type }}</p>
+    <p>{% trans 'stone name ' %}: {{ product.stone.stone_name }}</p>
+    <p>{% trans 'stone quality' %}: {{ product.stone.stone_quality }}</p>
+    <P>
+        {% trans 'birth month stone' %}:
+        {% for month in product.stone.birth_month_stone %}
+            <b>{{ month }}،</b>
+        {% endfor %}
+    </P>
+
+    {#    <p>{% trans 'birth month stone' %}: {{ product.stone.birth_month_stone}</p>#}
+    <p>{% trans 'product material' %}: {{ product.product_material }}</p>
+    <p>{% trans 'suitable for' %}: {{ product.suitable_for }}</p>
+    <p>{% trans 'product color' %}: {{ product.product_color }}</p>
+    <p>{% trans 'product inventory' %}: {{ product.product_inventory }} {% trans 'number' %}</p>
+    <p>{% trans 'price' %}: {{ product.price }}</p>
+    <p>{% trans 'stone description' %}: {{ product.stone.stone_description|linebreaksbr }}</p>
+{% endblock %}
