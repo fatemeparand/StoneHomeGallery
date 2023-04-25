@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'rosetta',
     'multiselectfield',
-
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'bootstrap4',
 
     # my_apps
     'accounts',
@@ -182,5 +184,10 @@ LANGUAGES = (
     ('en', 'English'),
     ('fa', 'Persian'),
 )
+
+# crispy config
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 

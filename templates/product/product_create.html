@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% load i18n %}
+
+{% block page_title %}
+     StoneHomeGallery/{% trans 'create new product' %}
+{% endblock %}
+
+{% block content %}
+    <h4>{% trans 'Please add your product details' %}</h4>
+    <form action="" method="post">
+    {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans 'add product ' %}</button>
+    </form>
+
+{% endblock %}

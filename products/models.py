@@ -72,7 +72,7 @@ class Product(models.Model):
     product_material = models.CharField(choices=MATERIAL_CHOICES, max_length=16, verbose_name=_('product material'))
     suitable_for = models.CharField(choices=SUITABLE_CHOICES, max_length=15, verbose_name=_('suitable for'))
     product_color = models.CharField(max_length=20, verbose_name=_('stone color'))
-    product_image = models.ImageField(verbose_name=_('product image'), upload_to='product_cover/')
+    product_image = models.ImageField(verbose_name=_('product image'), blank=True, upload_to='product_cover/')
 
     price = models.PositiveIntegerField(verbose_name=_('price'))
     product_inventory = models.PositiveIntegerField(verbose_name=_('Product inventory'))

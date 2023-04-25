@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Product
+from .forms import ProductCreationForm
 
 
 def product_list(request):
@@ -16,3 +17,15 @@ def product_detail(request, pk):
     return render(request, 'product/product_detail.html', context)
 
 
+def product_create(request):
+    if request.method == 'POST':
+        form = ProductCreationForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('products:product_list')
+
+    else:
+        form = ProductCreationForm()
+
+    context = {'form': form}
+    return render(request, 'product/product_create.html', context)
