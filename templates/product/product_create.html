@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    <h4>{% trans 'Please add your product details' %}</h4>
+    <h4>{% trans 'Please add your product details' %}:</h4>
     <form action="" method="post">
     {% csrf_token %}
         {{ form.as_p }}

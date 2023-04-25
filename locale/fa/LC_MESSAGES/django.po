@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-23 16:10+0330\n"
-"PO-Revision-Date: 2023-04-23 17:39+0330\n"
+"POT-Creation-Date: 2023-04-25 14:11+0330\n"
+"PO-Revision-Date: 2023-04-25 14:13+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgstr "اسفند"
 msgid "stone name"
 msgstr "اسم سنگ"
 
-#: .\products\models.py:30 .\templates\product\product_detail.html:20
+#: .\products\models.py:30 .\templates\product\product_detail.html:26
 msgid "stone description"
 msgstr "توصیف سنگ"
 
@@ -139,12 +139,12 @@ msgstr "اسم محصول"
 msgid "stone"
 msgstr "سنگ"
 
-#: .\products\models.py:72 .\templates\product\product_detail.html:14
+#: .\products\models.py:72 .\templates\product\product_detail.html:21
 msgid "product material"
 msgstr "جنس سنگ"
 
-#: .\products\models.py:73 .\templates\product\product_detail.html:15
-#: .\templates\product\product_list.html:11
+#: .\products\models.py:73 .\templates\product\product_detail.html:22
+#: .\templates\product\product_list.html:12
 msgid "suitable for"
 msgstr "مناسب برای"
 
@@ -156,7 +156,7 @@ msgstr "رنگ سنگ"
 msgid "product image"
 msgstr "عکس محصول"
 
-#: .\products\models.py:77 .\templates\product\product_detail.html:19
+#: .\products\models.py:77 .\templates\product\product_detail.html:25
 msgid "price"
 msgstr "قیمت"
 
@@ -184,36 +184,34 @@ msgstr "تاریخ اصلاح"
 msgid "Products"
 msgstr "محصولات"
 
-#: .\templates\_base.html:11
-#| msgid "women"
-msgid "Home"
-msgstr "خانه"
-
-#: .\templates\_base.html:12
-#| msgid "product lists"
-msgid "prodrct lists"
-msgstr "لیست محصولات"
-
-#: .\templates\_base.html:17
+#: .\templates\_base.html:14
 msgid "welcome"
 msgstr "خوش آمدی"
 
-#: .\templates\_base.html:18 .\templates\account\logout.html:5
+#: .\templates\_base.html:15 .\templates\account\logout.html:5
 msgid "logout"
 msgstr "خروج"
 
-#: .\templates\_base.html:22 .\templates\account\login.html:5
-#: .\templates\account\login.html:12
+#: .\templates\_base.html:19 .\templates\account\login.html:6
+#: .\templates\account\login.html:13
 #: .\templates\account\password_reset_from_key_done.html:10
 msgid "login"
 msgstr "ورود"
 
-#: .\templates\_base.html:23 .\templates\account\signup.html:5
+#: .\templates\_base.html:20 .\templates\account\signup.html:5
 #: .\templates\account\signup.html:12
 msgid "signup"
 msgstr "ثبت نام"
 
-#: .\templates\account\login.html:14
+#: .\templates\_base.html:25
+msgid "Home"
+msgstr "خانه"
+
+#: .\templates\_base.html:26
+msgid "prodrct lists"
+msgstr "لیست محصولات"
+
+#: .\templates\account\login.html:15
 msgid "forgot password"
 msgstr "فراموشی رمز"
 
@@ -269,32 +267,41 @@ msgstr "اکنون می توانید با رمز عبور جدید وارد شو
 msgid "Home Page"
 msgstr "صفحه خانه"
 
+#: .\templates\product\product_create.html:5
+#: .\templates\product\product_list.html:9
+msgid "create new product"
+msgstr "ایجاد محصول جدید"
+
+#: .\templates\product\product_create.html:9
+msgid "Please add your product details"
+msgstr "لطفا جزئیات محصول خود را اضافه کنید"
+
+#: .\templates\product\product_create.html:13
+#| msgid "product type"
+msgid "add product "
+msgstr "اضافه کردن محصول"
+
 #: .\templates\product\product_detail.html:11
-#| msgid "stone name"
 msgid "stone name "
 msgstr "اسم سنگ"
 
 #: .\templates\product\product_detail.html:12
-#| msgid "stone_quality"
 msgid "stone quality"
 msgstr "کیفیت سنگ"
 
-#: .\templates\product\product_detail.html:13
+#: .\templates\product\product_detail.html:14
 msgid "birth month stone"
 msgstr "سنگ ماه تولد"
 
-#: .\templates\product\product_detail.html:16
-#| msgid "product owner"
+#: .\templates\product\product_detail.html:23
 msgid "product color"
 msgstr "رنگ محصول"
 
-#: .\templates\product\product_detail.html:18
-#| msgid "Product inventory"
+#: .\templates\product\product_detail.html:24
 msgid "product inventory"
 msgstr "موجودی محصول"
 
-#: .\templates\product\product_detail.html:18
-#| msgid "mehr"
+#: .\templates\product\product_detail.html:24
 msgid "number"
 msgstr "عدد"
 
@@ -302,7 +309,7 @@ msgstr "عدد"
 msgid "product lists"
 msgstr "لیست محصولات"
 
-#: .\templates\product\product_list.html:12
+#: .\templates\product\product_list.html:13
 msgid "More"
 msgstr "بیشتر"
 

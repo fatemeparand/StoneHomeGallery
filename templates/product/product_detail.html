@@ -7,9 +7,11 @@
 
 {% block content %}
     <h4>{{ product.product_name }}</h4>
+    <a href="{% url 'products:product_update' product.id %}">{% trans 'Edit' %}</a>
     <p>{% trans 'product type' %}: {{ product.product_type.type }}</p>
     <p>{% trans 'stone name ' %}: {{ product.stone.stone_name }}</p>
     <p>{% trans 'stone quality' %}: {{ product.stone.stone_quality }}</p>
+
     <P>
         {% trans 'birth month stone' %}:
         {% for month in product.stone.birth_month_stone %}
@@ -17,7 +19,6 @@
         {% endfor %}
     </P>
 
-    {#    <p>{% trans 'birth month stone' %}: {{ product.stone.birth_month_stone}</p>#}
     <p>{% trans 'product material' %}: {{ product.product_material }}</p>
     <p>{% trans 'suitable for' %}: {{ product.suitable_for }}</p>
     <p>{% trans 'product color' %}: {{ product.product_color }}</p>
