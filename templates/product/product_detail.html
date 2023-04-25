@@ -7,7 +7,11 @@
 
 {% block content %}
     <h4>{{ product.product_name }}</h4>
-    <a href="{% url 'products:product_update' product.id %}">{% trans 'Edit' %}</a>
+    <p>
+         <a href="{% url 'products:product_update' product.id %}">{% trans 'Edit' %}</a>
+        <a href="{% url 'products:product_delete' product.id %}">{% trans 'delete' %}</a>
+    </p>
+
     <p>{% trans 'product type' %}: {{ product.product_type.type }}</p>
     <p>{% trans 'stone name ' %}: {{ product.stone.stone_name }}</p>
     <p>{% trans 'stone quality' %}: {{ product.stone.stone_quality }}</p>

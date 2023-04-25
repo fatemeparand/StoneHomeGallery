@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 14:11+0330\n"
-"PO-Revision-Date: 2023-04-25 14:13+0330\n"
+"POT-Creation-Date: 2023-04-25 14:53+0330\n"
+"PO-Revision-Date: 2023-04-25 14:54+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgstr "اسفند"
 msgid "stone name"
 msgstr "اسم سنگ"
 
-#: .\products\models.py:30 .\templates\product\product_detail.html:26
+#: .\products\models.py:30 .\templates\product\product_detail.html:31
 msgid "stone description"
 msgstr "توصیف سنگ"
 
@@ -99,7 +99,7 @@ msgid "Stones"
 msgstr "سنگ ها"
 
 #: .\products\models.py:47 .\products\models.py:70
-#: .\templates\product\product_detail.html:10
+#: .\templates\product\product_detail.html:15
 msgid "product type"
 msgstr "نوع محصول"
 
@@ -139,11 +139,11 @@ msgstr "اسم محصول"
 msgid "stone"
 msgstr "سنگ"
 
-#: .\products\models.py:72 .\templates\product\product_detail.html:21
+#: .\products\models.py:72 .\templates\product\product_detail.html:26
 msgid "product material"
 msgstr "جنس سنگ"
 
-#: .\products\models.py:73 .\templates\product\product_detail.html:22
+#: .\products\models.py:73 .\templates\product\product_detail.html:27
 #: .\templates\product\product_list.html:12
 msgid "suitable for"
 msgstr "مناسب برای"
@@ -156,7 +156,7 @@ msgstr "رنگ سنگ"
 msgid "product image"
 msgstr "عکس محصول"
 
-#: .\products\models.py:77 .\templates\product\product_detail.html:25
+#: .\products\models.py:77 .\templates\product\product_detail.html:30
 msgid "price"
 msgstr "قیمت"
 
@@ -220,10 +220,12 @@ msgid "Are you sure to leave the site?"
 msgstr "از ترک سایت مطمئن هستید؟"
 
 #: .\templates\account\logout.html:12
+#: .\templates\product\product_delete.html:12
 msgid "Yes"
 msgstr "بله"
 
 #: .\templates\account\logout.html:13
+#: .\templates\product\product_delete.html:13
 msgid "No"
 msgstr "خیر"
 
@@ -277,31 +279,44 @@ msgid "Please add your product details"
 msgstr "لطفا جزئیات محصول خود را اضافه کنید"
 
 #: .\templates\product\product_create.html:13
-#| msgid "product type"
 msgid "add product "
 msgstr "اضافه کردن محصول"
 
+#: .\templates\product\product_delete.html:5
+#: .\templates\product\product_detail.html:12
+msgid "delete"
+msgstr "حذف"
+
+#: .\templates\product\product_delete.html:9
+#| msgid "Are you sure to leave the site?"
+msgid "Are you sure to remove the "
+msgstr "برای حذف مطمئن هستید؟"
+
 #: .\templates\product\product_detail.html:11
+msgid "Edit"
+msgstr "ویرایش"
+
+#: .\templates\product\product_detail.html:16
 msgid "stone name "
 msgstr "اسم سنگ"
 
-#: .\templates\product\product_detail.html:12
+#: .\templates\product\product_detail.html:17
 msgid "stone quality"
 msgstr "کیفیت سنگ"
 
-#: .\templates\product\product_detail.html:14
+#: .\templates\product\product_detail.html:20
 msgid "birth month stone"
 msgstr "سنگ ماه تولد"
 
-#: .\templates\product\product_detail.html:23
+#: .\templates\product\product_detail.html:28
 msgid "product color"
 msgstr "رنگ محصول"
 
-#: .\templates\product\product_detail.html:24
+#: .\templates\product\product_detail.html:29
 msgid "product inventory"
 msgstr "موجودی محصول"
 
-#: .\templates\product\product_detail.html:24
+#: .\templates\product\product_detail.html:29
 msgid "number"
 msgstr "عدد"
 

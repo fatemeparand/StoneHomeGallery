@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% load i18n %}
+
+{% block page_title %}
+    StoneHomeGallery/{% trans 'delete' %}/{{ product.product_name }}
+{% endblock %}
+
+{% block content %}
+    <h4>{% trans 'Are you sure to remove the ' %} {{ product.product_name }} ?</h4>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="{% trans 'Yes' %}">
+        <a href="{{product.get_absolute_url}}" type="btn">{% trans 'No' %}</a>
+    </form>
+
+{% endblock %}

@@ -42,3 +42,14 @@ def product_update(request, pk):
 
     context = {'form': form}
     return render(request, 'product/product_create.html', context)
+
+
+def product_delete(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+
+    if request.method == 'POST':
+        product.delete()
+        return redirect('products:product_list')
+
+    context = {'product': product}
+    return render(request, 'product/product_delete.html', context)
